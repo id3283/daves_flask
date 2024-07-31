@@ -20,7 +20,6 @@ class BookList(Resource):
         books.append(new_book)
         return (new_book, 201)
 
-
 class Book(Resource):
     def get(self, book_id):
         book = next((book for book in books if book['id'] == book_id), None)
