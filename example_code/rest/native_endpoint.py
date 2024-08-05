@@ -10,6 +10,7 @@ books = [
 
 
 # Get all books
+@app.route('/books/', methods=['GET'])
 @app.route('/books', methods=['GET'])
 def get_books():
     return jsonify(books)
